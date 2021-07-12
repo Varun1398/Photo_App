@@ -1,0 +1,20 @@
+1. @RestController - It is a combination of @Controller and @ResponseBody and hence using it will help eliminate the use
+of @ResponseBody. This will register the class as restController and recieve HTTP requests.
+
+2. @RequestMapping - It is used to map requests to spring controller methods. It contains the path or URL when HTTP
+request is sent.
+
+3. @GetMapping - It is used to fetch GET requests onto a specific handler methods. It is a composed annotation that acts
+as a shortcut for @RequestMapping(method = RequestMethod. GET)
+
+4. @PostMapping - It is used to fetch POST requests onto a specific handler methods. It is a composed annotation that
+acts as a shortcut for @RequestMapping(method = RequestMethod. POST)
+
+5.  @PutMapping - It is used to fetch PUT requests onto a specific handler methods. It is a composed annotation that
+acts as a shortcut for @RequestMapping(method = RequestMethod. PUT)
+
+6.  @DeleteMapping - It is used to fetch Delete requests onto a specific handler methods. It is a composed annotation
+that acts as a shortcut for @RequestMapping(method = RequestMethod. Delete)
+
+7. @RequestBody - It simply maps  the HttpRequest body to a transfer or domain object, enabling automatic deserialization
+of the inbound HttpRequest body onto a Java object.
