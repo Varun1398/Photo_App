@@ -18,3 +18,7 @@ that acts as a shortcut for @RequestMapping(method = RequestMethod. Delete)
 
 7. @RequestBody - It simply maps  the HttpRequest body to a transfer or domain object, enabling automatic deserialization
 of the inbound HttpRequest body onto a Java object.
+
+8. @EnableWebSecurity - @EnableWebSecurity is a marker annotation. It allows Spring to find (it's a @Configuration and,
+therefore, @Component ) and automatically apply the class to the global WebSecurity . If I don't annotate any of my class
+with @EnableWebSecurity still the application prompting for username and password.
